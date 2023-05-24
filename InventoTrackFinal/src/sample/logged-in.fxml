@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoggedInController">
+   <children>
+      <Label fx:id="label_welcome" layoutX="206.0" layoutY="55.0" prefHeight="60.0" prefWidth="460.0" text="WELCOME TO INVENTO-TRACK !" textFill="#6693de">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_checkStocks" layoutX="93.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleCheckStocks" prefHeight="74.0" prefWidth="232.0" style="-fx-background-color: #0f8bd9;" text="CHECK STOCKS">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Button fx:id="button_addStocks" layoutX="415.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleAddStocks" prefHeight="74.0" prefWidth="243.0" style="-fx-background-color: #0f8bd9;" text="ADD STOCKS">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+      <Label layoutX="98.0" layoutY="129.0" prefHeight="74.0" prefWidth="604.0" text="    &quot;Track, Manage, and Optimize Your Inventory with InventoTrack&quot;" textFill="#9e2c61">
+         <font>
+            <Font name="System Italic" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="button_logout" layoutX="334.0" layoutY="511.0" mnemonicParsing="false" onAction="#handleLogOutButton" style="-fx-background-color: #23b0af;" text="LOG OUT" textFill="#191b1b">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button fx:id="button_sellStocks" layoutX="301.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleSellStocks" prefHeight="74.0" prefWidth="171.0" style="-fx-background-color: #0f8bd9;" text="SELL STOCKS">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

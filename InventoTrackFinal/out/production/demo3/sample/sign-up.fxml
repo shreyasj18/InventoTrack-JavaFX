@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="393.0">
+         <children>
+            <Label layoutX="67.0" layoutY="361.0" prefHeight="37.0" prefWidth="210.0" text="  InventoTrack!" textFill="#c71b1b">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font></Label>
+            <ImageView fitHeight="334.0" fitWidth="383.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@warehouse-management-software.png" />
+               </image></ImageView>
+            <Label layoutX="13.0" layoutY="411.0" prefHeight="20.0" prefWidth="338.0" text="&quot;Efficiently Manage Your Inventory with InventoTrack&quot;" textFill="#0f8bd9">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font></Label>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="600.0" prefWidth="598.0">
+         <children>
+            <ImageView fitHeight="173.0" fitWidth="171.0" layoutX="112.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images.png" />
+               </image></ImageView>
+            <Button fx:id="button_signup" layoutX="189.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleButton" text="Sign up">
+               <font>
+                  <Font size="16.0" />
+               </font></Button>
+            <TextField fx:id="tf_userName" layoutX="191.0" layoutY="238.0" prefHeight="26.0" prefWidth="171.0" promptText="Username" />
+            <Label layoutX="77.0" layoutY="237.0" prefHeight="26.0" prefWidth="98.0" text="Username :" textFill="#1077cc">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label layoutX="77.0" layoutY="287.0" prefHeight="26.0" prefWidth="90.0" text="Password : " textFill="#0f8bd9">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Label layoutX="38.0" layoutY="340.0" prefHeight="26.0" prefWidth="150.0" text="Confirm Password :" textFill="#0f8bd9">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Label>
+            <Button fx:id="button_log_in" layoutX="211.0" layoutY="529.0" mnemonicParsing="false" onAction="#handleLoginBtn" prefHeight="20.0" prefWidth="65.0" text="Log in" />
+            <Label layoutX="158.0" layoutY="493.0" prefHeight="18.0" prefWidth="171.0" text="Already have an account ?" textFill="#0f8bd9">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <PasswordField fx:id="tf_passWord" layoutX="195.0" layoutY="288.0" prefHeight="26.0" prefWidth="166.0" promptText="Password" />
+            <PasswordField fx:id="tf_confPass" layoutX="194.0" layoutY="340.0" prefHeight="26.0" prefWidth="165.0" promptText="Confirm Password" />
+         </children></AnchorPane>
+   </children>
+</HBox>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CheckSales">
+    <children>
+        <AnchorPane prefHeight="600.0" prefWidth="807.0" style="-fx-background-color: #d4cb6c;">
+            <children>
+                <TableView fx:id="tableView" layoutX="2.0" layoutY="-1.0" prefHeight="539.0" prefWidth="800.0">
+                    <columns>
+                        <TableColumn fx:id="customerIDColumn" prefWidth="77.0" text="Cutomer ID" />
+                        <TableColumn fx:id="customerNameColumn" prefWidth="179.0" text="Name" />
+                        <TableColumn fx:id="cityColumn" prefWidth="98.0" text="City" />
+                        <TableColumn fx:id="productIDColumn" minWidth="3.4000244140625" prefWidth="96.0" text="Product ID" />
+                        <TableColumn fx:id="quantityColumn" minWidth="0.20001220703125" text="Quantity" />
+                        <TableColumn fx:id="soldOnColumn" prefWidth="157.0" text="Sold on" />
+                        <TableColumn fx:id="amountColumn" prefWidth="122.0" text="Amount" />
+                    </columns>
+                </TableView>
+                <Button fx:id="homeButton" layoutX="464.0" layoutY="545.0" mnemonicParsing="false" onAction="#handleHome" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #23b0af;" text="HOME">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Button>
+                <Button fx:id="backButton" layoutX="313.0" layoutY="545.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #23b0af;" text="BACK">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Button>
+            </children>
+        </AnchorPane>
+    </children>
+</HBox>
